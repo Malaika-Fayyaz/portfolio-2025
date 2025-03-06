@@ -25,7 +25,7 @@ A personal portfolio website showcasing my skills, education, and projects.
 [![Projects Section](https://github.com/Malaika-Fayyaz/portfolio-2025/blob/main/projects.png)]
 
 ### Contact Section
-![Contact Section][(https://github.com/Malaika-Fayyaz/portfolio-2025/blob/main/contact.png)]
+[![Contact Section][(https://github.com/Malaika-Fayyaz/portfolio-2025/blob/main/contact.png)]
 
 ## How to Run the Project
 1. Clone the repository:
