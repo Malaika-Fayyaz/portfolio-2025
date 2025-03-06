@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">  
+
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <img src="mypicture2.jpg" alt="Profile Picture" class="sidebar-picture">
+            <h3>Malaika Fayyaz</h3>
+            <p>Graphic Designer | Game Developer | Content Writer</p>
+        </div>
+    </div>
+
+    <div class = "content">
+    <div class="profile" id="home">
+        <img src="mypicture2.jpg" alt="Profile Picture" class="profile-picture">
+        <div class="about">
+            <h2>About Me</h2>
+            <p>Hello! <b>I’m Malaika Fayyaz</b>, a passionate and creative individual with a diverse skill set in graphic design, game development, and content writing.
+                I believe that creativity is a bridge between technology and art, and I love working in spaces where these two worlds meet. My work is driven by purpose, always aiming to create meaningful and beautiful solutions that leave an impact.
+                Aside from my technical endeavors, I enjoy playing basketball and badminton, sketching, and constantly seeking out new creative challenges.
+            </p>
+        </div>
+    </div>
+
+ 
+    <section id="education" class = "section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-table">
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Degree</th>
+                        <th scope="col">Institute</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bachelor's in Information Technology</td>
+                        <td>Information Technology University, Lahore</td>
+                        <td>2023 - Present</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>Intermediate In Computer Science</td>
+                        <td>Kips College</td>
+                        <td>2020 - 2022</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Matriculation</td>
+                        <td>Umar Grammar School</td>
+                        <td>2018 - 2020</td>
+                        <td>A+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+          <div class="project-card">
+            <img src="project1.png" alt="Project 1">
+            <h3>The Hurdle Game</h3>
+            <p>Build an engaging endless runner during a game development course. Players control a character running along a long track, navigating various hurdles while maintaining continuous movement.</p>
+          </div>
+      
+          <div class="project-card">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Chess Game</h3>
+            <p>Developed a command-line-based Chess game in C++ with full gameplay mechanics, including piece movement, check detection, and win conditions. The project focuses on providing a user-friendly experience with clear prompts and valid move checks.</p>
+          </div>
+      
+          <div class="project-card">
+            <img src="project3.png" alt="Project 3">
+            <h3>Text Editor</h3>
+            <p>Designed a basic text editor using data structures and algorithms, allowing users to create, edit, and save text documents. The project implements efficient operations for text manipulation, offering an interactive and responsive editing environment.</p>
+          </div>
+        </div>
+      </section>
+      
+
+    <section id="contact" class = "section">
+        <h2 class="section-title">Contact</h2>
+        <form class="contact-form">
+            <div class="mb-3">
+                <label for="name" class="label">Name       </label>
+                <input type="text" class="input" id="name" placeholder="Enter your name" required>
+            </div>
+            <br>
+            <div class="mb-3">
+                <label for="email" class="label">Email     </label>
+                <input type="email" class="input" id="email" placeholder="Enter your email" required>
+            </div>
+            <br>
+            <div class="mb-3">
+                <label for="message" class="label">Message  </label>
+                <input class="input" id="message"  placeholder="Write your message here" required></textarea>
+            </div>
+            <button type="submit" class="contact-form button">Submit</button>
+        </form>
+    </section>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
