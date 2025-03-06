@@ -18,6 +18,15 @@ A personal portfolio website showcasing my skills, education, and projects.
 - Skills Section
 - Contact Information
 
+## Screenshots
+### Home Page
+[![Home Page](https://github.com/Malaika-Fayyaz/portfolio-2025/blob/main/homepage.png)]
+### Projects Section
+[![Projects Section](https://github.com/Malaika-Fayyaz/portfolio-2025/blob/main/projects.png)]
+
+### Contact Section
+![Contact Section][(https://github.com/Malaika-Fayyaz/portfolio-2025/blob/main/contact.png)]
+
 ## How to Run the Project
 1. Clone the repository:
    ```bash
