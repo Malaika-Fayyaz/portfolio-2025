@@ -1,2 +1,30 @@
-# portfolio-2025
-My portfolio build as a first assignment in the web dev course.
+# Portfolio Website
+
+A personal portfolio website showcasing my skills, education, and projects.
+
+## Demo Link
+[Live Demo](https://malaika-fayyaz.github.io/portfolio-2025/)
+
+## Tech Stack
+- HTML
+- CSS
+- Bootstrap 5
+
+## Features
+- Fully Responsive Design
+- Modern UI
+- Educational Background Section
+- Projects Showcase
+- Skills Section
+- Contact Information
+
+## How to Run the Project
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/malaika-fayyaz/portfolio-2025.git
+   ```
+2. Open the `index.html` file in your browser.
+
+## Contact
+GitHub: [malaika-fayyaz](https://github.com/malaika-fayyaz)
+
