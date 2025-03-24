@@ -1,18 +1,17 @@
-
-* {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
+}
 .container {
-    max-width: 1500px; 
+    max-width: 1500px;
     margin: auto;
     gap: 30px;
     align-items: center;
 }
 .content {
-    margin-left: 260px; 
-    transition: margin 0.3s ease; 
+    margin-left: 260px;
+    transition: margin 0.3s ease;
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -29,27 +28,15 @@ body {
     color: #ecf0f1;
 }
 .section-title {
-    color: #f7f8f8; 
-    text-align: center; 
-    margin-bottom: 20px; 
-    font-size: 28px; 
+    color: #f7f8f8;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
     font-weight: 600;
 }
-body::after {
-    content: "Built with patience, breakdowns, and a Broken Wrist by Malaika Fayyaz";
-    position: absolute;
-    right: 25px; 
-    margin-top: 2200px;
-    color: #ffffff;
-    font-size: 12px;
-    opacity: 0.5;
-    font-family: 'Comic Sans MS', cursive; 
-}
 
 
-
-/*_____________Home PAGE*/
-
+/* _____________Home PAGE */
 
 .profile {
     margin-top: 100px;
@@ -64,10 +51,10 @@ body::after {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #7ab3e2;
-    transition: transform 0.4s ease-in-out; 
+    transition: transform 0.4s ease-in-out;
 }
 .profile-picture:hover {
-    transform: scale(1.05) ; 
+    transform: scale(1.05);
     box-shadow: 0 0 15px #7ab3e2;
 }
 .name {
@@ -76,10 +63,10 @@ body::after {
     color: rgb(249, 249, 252);
 }
 .about {
-    max-width: 800px; 
-    margin: 0 auto; 
-    text-align: center; 
-    padding: 20px; 
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
 }
 .about h2 {
     color: #7ab3e2;
@@ -93,10 +80,7 @@ body::after {
     line-height: 1.6;
 }
 
-
-
-
-/* _______________NAV BAR   */
+/* _______________NAV BAR */
 
 .navbar {
     width: calc(100% - 250px);
@@ -116,7 +100,6 @@ body::after {
     gap: 30px;
 }
 .navbar a {
-    text-decoration: none;
     color: #7ab3e2;
     font-weight: 600;
     font-size: 18px;
@@ -126,9 +109,7 @@ body::after {
     color: #ecf0f1;
 }
 
-
-
-/* _______________SIDE BAR  */
+/* _______________SIDE BAR */
 
 .sidebar {
     width: 250px;
@@ -144,6 +125,7 @@ body::after {
     justify-content: center;
     text-align: center;
     z-index: 90;
+    transition: width 0.3s ease; 
 }
 .sidebar-content img {
     width: 150px;
@@ -152,58 +134,53 @@ body::after {
     margin-bottom: 20px;
     border: 3px solid #7ab3e2;
     object-fit: cover;
+    transition: width 0.3s ease, height 0.3s ease; 
 }
 .sidebar-content h3 {
     color: #7ab3e2;
     margin-bottom: 10px;
     font-size: 24px;
+    transition: font-size 0.3s ease; 
 }
 .sidebar-content p {
     color: #ecf0f1;
     margin-bottom: 20px;
+    transition: opacity 0.3s ease; 
 }
 .sidebar-content ul {
     list-style: none;
     color: #ecf0f1;
     text-align: left;
     padding-left: 0;
+    transition: opacity 0.3s ease; 
 }
 .sidebar-content ul li {
     margin-bottom: 10px;
 }
-@media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        border-right: none;
-        border-bottom: 2px solid #7ab3e2;
-    }
-}
 
 
-/* _______________EDUCATION  */
+
+/* _______________EDUCATION */
 
 .table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(122, 179, 226, 0.1); 
+    background-color: rgba(122, 179, 226, 0.1);
 }
 .table-dark {
     background-color: #1e1e2d;
-    color: #ecf0f1; 
+    color: #ecf0f1;
 }
 .table th, .table td {
     padding: 12px;
     text-align: center;
-    border: 1px solid #7ab3e2; 
+    border: 1px solid #7ab3e2;
 }
 .table thead th {
-    color: #7ab3e2; 
+    color: #7ab3e2;
     text-transform: uppercase;
     font-weight: 600;
 }
 
-
-/* _______________CONTACT   */
+/* _______________CONTACT */
 
 #contact {
     margin-top: 50px;
@@ -220,15 +197,15 @@ body::after {
     color: #7ab3e2;
     font-weight: 600;
 }
-.contact-form input, 
+.contact-form input,
 .contact-form textarea {
     margin: auto;
     margin-left: 15px;
     background-color: rgba(122, 179, 226, 0.1);
     color: #ecf0f1;
     border: 2px solid #7ab3e2;
-    padding:10px;
-    border-radius:90px;
+    padding: 10px;
+    border-radius: 90px;
     width: 50%;
 }
 .contact-form input:focus,
@@ -252,41 +229,158 @@ body::after {
     transform: scale(1.1);
 }
 
- 
+/* _______________PROJECTS */
+
 .projects-container {
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 2rem; 
-    justify-items: center; 
-  }
-  .project-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+.project-card {
     width: 300px;
-    height:470px;
+    height: 470px;
     padding: 1rem;
     border: 2px solid #7ab3e2;
     text-align: center;
     transition: transform 0.3s ease;
-  }
-  .project-card:hover {
+}
+.project-card:hover {
     transform: scale(1.05);
-  }
-  .project-card img {
+}
+.project-card img {
     width: 100%;
-    height: 200px; 
+    height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
     transition: transform 0.3s ease-in-out;
-  }
+}
 .project-card:hover img {
     transform: scale(1.1);
-  } 
-  .project-card h3 {
+}
+.project-card h3 {
     margin-bottom: 10px;
-    color:#7ab3e2;
-  } 
-  .project-card p {
+    color: #7ab3e2;
+}
+.project-card p {
     font-size: 14px;
-    color:#f7f8f8;
-  }
-  
+    color: #f7f8f8;
+}
 
+
+/* _______________MEDIA QUERIES FOR RESPONSIVENESS */
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar-content img {
+        display: none;
+    }
+
+    .sidebar-content h3,
+    .sidebar-content p,
+    .sidebar-content ul {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 2px solid #7ab3e2;
+    }
+
+    .navbar {
+        width: 100%;
+        position: relative;
+        top: 0;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-picture {
+        margin-left: 0;
+        width: 300px;
+        height: 300px;
+    }
+
+    .contact-form button {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-picture {
+        width: 250px;
+        height: 250px;
+    }
+
+    .name {
+        font-size: 36px;
+    }
+
+    .about h2 {
+        font-size: 24px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .project-card {
+        width: 250px;
+        height: auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+    }
+
+    .name {
+        font-size: 28px;
+    }
+
+    .about h2 {
+        font-size: 20px;
+    }
+
+    .about p {
+        font-size: 12px;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .project-card {
+        width: 200px;
+        height: auto;
+    }
+}
